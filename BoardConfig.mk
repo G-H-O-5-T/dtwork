@@ -53,6 +53,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/mido
 # NEVER ALLOW
 SELINUX_IGNORE_NEVERALLOWS := true
 
+#Missing Dependencies
+ALLOW_MISSING_DEPENDENCIES=true
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -218,4 +220,7 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/onclite/BoardConfigVendor.mk
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

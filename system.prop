@@ -1,0 +1,7 @@
+# Maintainer                                                           
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.xtended.maintainer=☭ GH05T ☭
+
+# Xteneded version
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.xtended.display.version=JACK DANIELS EDITION
