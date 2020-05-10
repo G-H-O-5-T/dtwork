@@ -4,6 +4,9 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
 
+#FPS INFO
+/sys/devices/virtual/graphics/fb0/measured_fps  u:object_r:sysfs:s0
+
 # Fpc Fingerprint
 /data/fpc(/.*)?					u:object_r:fpc_data_file:s0
 /dev/socket/fpce(/.*)?				u:object_r:fpce_socket:s0
@@ -48,3 +51,4 @@
 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness      u:object_r:sysfs_torch:s0 
 /sys/devices/platform/kcal_ctrl.0(/.*)?                                 u:object_r:sysfs_kcal:s0
 /sys/devices/virtual/timed_output/vibrator/vtg_level                    u:object_r:sysfs_vibrator:s0
+/sys/devices/platform/kcal_ctrl.0/kcal                                  u:object_r:sysfs:s0
