@@ -417,3 +417,7 @@ PRODUCT_PACKAGES += \
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
+
+#Ortus Icon Pack
+PRODUCT_PACKAGES += \
+    Ortus
