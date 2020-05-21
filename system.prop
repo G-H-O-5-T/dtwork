@@ -1,3 +1,0 @@
-# Xteneded version
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.xtended.display.version= FAN EDITION
