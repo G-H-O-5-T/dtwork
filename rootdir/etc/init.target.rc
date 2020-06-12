@@ -201,6 +201,13 @@ on charger
     start vendor.power_off_alarm
     start thermal-engine
 
+service ppd /vendor/bin/mm-pp-dpps
+    class late_start
+    user system
+    group system graphics
+    socket pps stream 0660 system system
+    disabled
+
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
 
@@ -222,10 +229,3 @@ on boot
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
-
-service ppd /vendor/bin/mm-pp-dpps
-    class late_start
-    user system
-    group system graphics
-    socket pps stream 0660 system system
-    disabled
