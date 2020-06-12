@@ -201,6 +201,13 @@ on charger
     start vendor.power_off_alarm
     start thermal-engine
 
+service ppd /vendor/bin/mm-pp-dpps
+    class late_start
+    user system
+    group system graphics
+    socket pps stream 0660 system system
+    disabled
+
 on boot
 # Update cpusets on boot and we want better load balancing
     write /dev/cpuset/top-app/cpus 0-7
@@ -212,9 +219,3 @@ on boot
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
-service ppd /vendor/bin/mm-pp-dpps
-    class late_start
-    user system
-    group system graphics
-    socket pps stream 0660 system system
-    disabled
