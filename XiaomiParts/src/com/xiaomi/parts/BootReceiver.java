@@ -26,9 +26,11 @@ import android.text.TextUtils;
 import com.xiaomi.parts.preferences.VibratorStrengthPreference;
 import com.xiaomi.parts.preferences.VibratorCallStrengthPreference;
 import com.xiaomi.parts.preferences.VibratorNotifStrengthPreference;
+import com.xiaomi.parts.settings.thermal.ThermalUtils;
 
 import com.xiaomi.parts.kcal.Utils;
 import com.xiaomi.parts.ambient.SensorsDozeService;
+import com.xiaomi.parts.thermal.ThermalUtils;
 
 public class BootReceiver extends BroadcastReceiver implements Utils {
 
@@ -95,5 +97,16 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
         }
+    }
+}
+     public class BootReceiver extends BroadcastReceiver {
+
+    private static final boolean DEBUG = false;
+    private static final String TAG = "XiaomiParts";
+    
+	@Override
+    public void onReceive(final Context context, Intent intent) {
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        ThermalUtils.startService(context);
     }
 }
