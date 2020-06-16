@@ -315,6 +315,8 @@ PRODUCT_PACKAGES += \
     init.xiaomi_parts.rc \
     ueventd.qcom.rc \
     init.safailnet.rc
+    init.gpuboost.rc \
+    init.gpuboost.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
