@@ -37,6 +37,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Bleed Zenx
 ZENX_BUILD_TYPE := OFFICIAL
 
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := zenx_mido
