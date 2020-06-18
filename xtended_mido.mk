@@ -34,6 +34,9 @@ TARGET_GAPPS_ARCH := arm64
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.xtended.maintainer=☭GH05T☭
 
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := xtended_mido
