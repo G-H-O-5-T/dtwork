@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_mido.mk
+    $(LOCAL_DIR)/zenx_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_mido-userdebug \
-    xtended_mido-eng \
-    xtended_mido-user
+    zenx_mido-userdebug \
+    zenx_mido-eng \
+    zenx_mido-user
