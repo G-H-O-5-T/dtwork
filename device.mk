@@ -313,7 +313,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.xiaomi_parts.rc \
     ueventd.qcom.rc \
-    init.safailnet.rc
+    init.safailnet.rc\
     init.spectrum.rc \
     init.spectrum.sh \
     init.gpuboost.rc \
