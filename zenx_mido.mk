@@ -30,10 +30,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.xtended.maintainer=☭GH05T☭
-
 #Bleed Zenx
 ZENX_BUILD_TYPE := OFFICIAL
 
