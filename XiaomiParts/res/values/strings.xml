@@ -299,4 +299,8 @@
     <string name="tcpcongestion_bic">bic</string>
     <string name="tcpcongestion_highspeed">highspeed</string>
     <string name="tcpcongestion_htcp">htcp</string>
+
+    <!-- Notification LED brightness -->
+    <string name="notification_title">Notification LED</string>
+    <string name="notification_led_title">LED brightness</string>
 </resources>
